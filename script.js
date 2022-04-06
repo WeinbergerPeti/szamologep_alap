@@ -40,6 +40,7 @@ function init()
         $All(".szamok button")[i].addEventListener("click", gombErtek);
         db++;
     }
+    ID("torles").addEventListener("click", torlesGomb);
 }
 
 function gombErtek()
@@ -49,4 +50,8 @@ function gombErtek()
     $(".kijelzo").innerHTML+=szamTarolo;
 }
     
-
+function torlesGomb()
+{
+    var torloGomb=event.target.innerHTML;
+    $(".kijelzo").innerHTML="";
+}
