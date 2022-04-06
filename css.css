@@ -27,8 +27,9 @@ article {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
-.szamok button {
-    
+.szamok button 
+{
+    background-color: aqua;   
 }
 .muvjelek {
     grid-area: muv;

@@ -34,11 +34,19 @@ function init()
 
     $("footer").innerHTML="készítette: Weinberger Péter"
 
-    
+    db=0;
     for (let i = 0; i < 10; i++) 
     {
-        $All("button")[0].addEventListener("click", gombErtek);
+        $All(".szamok button")[i].addEventListener("click", gombErtek);
+        db++;
     }
+}
+
+function gombErtek()
+{
+    var szamTarolo=event.target.innerHTML;
+    /* console.log(event.target.innerHTML); */
+    $(".kijelzo").innerHTML+=szamTarolo;
 }
     
 
